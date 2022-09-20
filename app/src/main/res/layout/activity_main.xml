@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/green1"
     android:orientation="vertical"
     tools:context=".MainActivity">
 <HorizontalScrollView
@@ -95,6 +96,7 @@
        android:id="@+id/recyclerview"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
+    
        android:layout_margin="8dp"
        />
 
