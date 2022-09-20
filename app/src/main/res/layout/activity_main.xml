@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+       <Button
+           android:id="@+id/btn_1"
+           android:textSize="12sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:text="business"/>
+       <Button
+           android:id="@+id/btn_2"
+           android:layout_width="wrap_content"
+           android:textSize="12sp"
+
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:text="entertainment"/>
+       <Button
+           android:id="@+id/btn_3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="12sp"
+
+           android:layout_marginStart="12dp"
+           android:text="general"/>
+       <Button
+           android:id="@+id/btn_4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="12sp"
+
+           android:layout_marginStart="12dp"
+           android:text="health"/>
+       <Button
+           android:id="@+id/btn_5"
+           android:layout_width="wrap_content"
+           android:textSize="12sp"
+
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:text="science"/>
+       <Button
+           android:id="@+id/btn_6"
+           android:layout_width="wrap_content"
+           android:textSize="12sp"
+
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:text="sports"/>
+       <Button
+           android:id="@+id/btn_7"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="12sp"
+
+           android:layout_marginStart="12dp"
+           android:text="technology"/>
+
+    </LinearLayout>
+
+
+</HorizontalScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_margin="16dp"
+        >
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchview"
+            app:defaultQueryHint="Search News"
+            app:iconifiedByDefault="false"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+    </androidx.cardview.widget.CardView>
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="8dp"
+       />
+
+
+</LinearLayout>
+
